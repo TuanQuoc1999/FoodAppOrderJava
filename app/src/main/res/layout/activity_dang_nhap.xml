@@ -15,7 +15,7 @@
         android:layout_marginTop="50dp"
         android:gravity="center"
         android:text="@string/slogan"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColor="#ffffff"
         android:textSize="40sp" />
 
     <LinearLayout
@@ -34,8 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="SIGN IN"
-            android:textColor="#0C0C0C"
-            android:textSize="20sp"
+            android:textColor="@color/btnDangNhap"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
@@ -46,7 +46,7 @@
             android:layout_marginRight="30dp"
             android:hint="Phone"
             android:inputType="phone"
-            android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+            android:textColorHint="#ffffff"
             android:textSize="25sp"
             app:met_baseColor="@android:color/white"
             app:met_floatingLabel="highlight"
@@ -62,7 +62,7 @@
             android:layout_marginRight="30dp"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+            android:textColorHint="#ffffff"
             android:textSize="25sp"
             app:met_baseColor="@android:color/white"
             app:met_floatingLabel="highlight"
@@ -89,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:text="Remember me"
-                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textColor="#ffffff"
                     app:cbd_strokeColor="@android:color/white"
                     app:cbd_tickColor="@color/colorPrimaryDark" />
 
@@ -123,7 +123,7 @@
         android:layout_below="@+id/info"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:background="@drawable/btn_dangki"
+        android:background="@drawable/btn_dangnhap"
         android:shadowColor="@android:color/black"
         android:text="Sign in"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"

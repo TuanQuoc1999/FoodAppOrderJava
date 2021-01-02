@@ -15,7 +15,7 @@
         android:layout_marginTop="50dp"
         android:gravity="center"
         android:text="@string/slogan"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColor="#ffffff"
         android:textSize="40sp" />
 
     <LinearLayout
@@ -34,7 +34,7 @@
             android:layout_gravity="center_horizontal"
             android:text="SIGN UP"
             android:textColor="@color/btnDangKi"
-            android:textSize="20sp"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <com.rengwuxian.materialedittext.MaterialEditText

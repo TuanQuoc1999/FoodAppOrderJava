@@ -38,7 +38,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MenuViewHolder holder, int position) {
         holder.txtMenuName.setText(categoryList.get(position).getName());
-        Picasso.get().load(categoryList.get(position).getImage()).into(holder.imageView);
+        Picasso.get().load("http://10.0.196.85:8080/androidAPI/img/"+categoryList.get(position).getImage()).into(holder.imageView);
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onClick(View view, int position, boolean isLongClick) {

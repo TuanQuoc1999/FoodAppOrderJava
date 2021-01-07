@@ -39,8 +39,8 @@ public class YourAccount extends AppCompatActivity {
     FoodList foodList;
     Home home;
     Button btnChangePassword, btnUpdateInfo;
-    String urlChangePass = "https://orderadmin.000webhostapp.com/androidAPI/changepass.php";
-    String urlUpdateInfo = "https://orderadmin.000webhostapp.com/androidAPI/updateinfo.php";
+    String urlChangePass = "http://10.0.196.85:8080/androidAPI/changepass.php";
+    String urlUpdateInfo = "http://10.0.196.85:8080/androidAPI/updateinfo.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

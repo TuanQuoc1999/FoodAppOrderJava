@@ -52,7 +52,7 @@ public class FoodList extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     public TextView txtName;
-    String urlGetFood = "https://orderadmin.000webhostapp.com/androidAPI/getfood.php";
+    String urlGetFood = "http://10.0.196.85:8080/androidAPI/getfood.php";
 
     //search bar
     List<Food> foodSearch = new ArrayList<>();

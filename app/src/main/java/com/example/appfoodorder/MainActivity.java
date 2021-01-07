@@ -33,7 +33,7 @@ import io.paperdb.Paper;
 public class MainActivity extends AppCompatActivity {
     Button btnDangKi,btnDangNhap;
     TextView txtSlogan;
-    String urlLogin = "https://orderadmin.000webhostapp.com/androidAPI/login.php";
+    String urlLogin = "http://10.0.196.85:8080/androidAPI/login.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

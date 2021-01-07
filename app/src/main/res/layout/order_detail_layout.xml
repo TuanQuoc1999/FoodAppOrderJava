@@ -22,10 +22,9 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="Product Name: "
-                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <TextView
                 android:id="@+id/txtProductName"
@@ -41,10 +40,9 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="Product Price: "
-                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <TextView
                 android:id="@+id/txtProductPrice"
@@ -60,10 +58,9 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="Product Quantity: "
-                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <TextView
                 android:id="@+id/txtProductQuantity"

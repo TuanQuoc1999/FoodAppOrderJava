@@ -54,9 +54,9 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
     Button btnShowComment;
 
     String foodId;
-    String urlDetail = "https://orderadmin.000webhostapp.com/androidAPI/getdetail.php";
-    String urlGetRating = "https://orderadmin.000webhostapp.com/androidAPI/getavg.php";
-    String urlSetRating = "https://orderadmin.000webhostapp.com/androidAPI/setrating.php";
+    String urlDetail = "http://10.0.196.85:8080/androidAPI/getdetail.php";
+    String urlGetRating = "http://10.0.196.85:8080/androidAPI/getavg.php";
+    String urlSetRating = "http://10.0.196.85:8080/androidAPI/setrating.php";
     ProgressDialog dialog;
     Food currentFood;
     Database database;
@@ -285,7 +285,7 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> params = new HashMap<>();
-                params.put("userPhone", Common.currentUser.getPhone());
+                params.put("userPhone",Common.currentUser.getPhone());
                 params.put("foodId",foodId);
                 params.put("rateValue",String.valueOf(i));
                 params.put("comment",s);

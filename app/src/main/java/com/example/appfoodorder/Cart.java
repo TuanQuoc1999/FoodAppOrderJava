@@ -32,7 +32,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -51,8 +53,8 @@ public class Cart extends AppCompatActivity {
     final String alphabet = "123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     String s;
     EditText edtAddress;
-    String urlsetCartDetail = "https://orderadmin.000webhostapp.com/androidAPI/setcartdetail.php";
-    String urlsetCart = "https://orderadmin.000webhostapp.com/androidAPI/setcart.php";
+    String urlsetCartDetail = "http://10.0.196.85:8080/androidAPI/setcartdetail.php";
+    String urlsetCart = "http://10.0.196.85:8080/androidAPI/setcart.php";
 
 
     @Override
@@ -199,6 +201,9 @@ public class Cart extends AppCompatActivity {
                 params.put("phone", Common.currentUser.getPhone());
                 params.put("total", String.valueOf(total));
                 params.put("address", edtAddress.getText().toString());
+                Date date = new Date();
+                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+                params.put("order_time",formatter.format(date));
                 return params;
             }
         };

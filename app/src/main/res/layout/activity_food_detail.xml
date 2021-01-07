@@ -9,46 +9,45 @@
     tools:context=".FoodDetail">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:background="?attr/colorPrimary"
         android:layout_weight="1"
-        android:background="#FFC107"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
 
         <ImageButton
             android:id="@+id/btnBack"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center_vertical"
             android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical"
             android:background="@null"
-            android:src="@drawable/ic_arrow_left_black_48dp" />
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:layout_marginLeft="32dp"
-            android:text="Food Detail"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_gravity="center_vertical"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Food Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFC107"
             android:gravity="right"
             android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/ButtonCart"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center_vertical"
                 android:layout_marginRight="16dp"
+                android:layout_gravity="center_vertical"
                 android:background="@null"
-                android:src="@drawable/ic_shopping_cart_black_24dp" />
+                android:src="@drawable/ic_shopping_cart_white_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
 
         </LinearLayout>
 
@@ -83,18 +82,19 @@
                     android:id="@+id/img_food"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#009688"
-                    android:contentDescription="@null"
                     android:scaleType="centerCrop"
-                    app:layout_collapseMode="parallax" />
+                    android:contentDescription="@null"
+                    app:layout_collapseMode="parallax"
+                    />
 
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
+                    app:title="Food Name"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    app:layout_collapseMode="parallax"
                     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                    app:title="Food Name" />
+                    app:layout_collapseMode="parallax"
+                    />
 
             </com.google.android.material.appbar.CollapsingToolbarLayout>
 
@@ -146,7 +146,6 @@
                         android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-
                         <TextView
                             android:id="@+id/food_name"
                             android:layout_width="wrap_content"
@@ -154,9 +153,9 @@
                             android:layout_marginTop="8dp"
                             android:padding="12dp"
                             android:text="Food Name"
-                            android:textColor="#080908"
+                            android:textStyle="bold"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textColor="@color/colorPrimaryDark"/>
 
                         <LinearLayout
                             android:id="@+id/layout_price"
@@ -165,30 +164,30 @@
                             android:layout_height="wrap_content">
 
                             <TextView
+                                android:layout_marginLeft="12dp"
                                 android:id="@+id/food_price"
+                                android:layout_weight="3"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="12dp"
-                                android:layout_weight="3"
                                 android:text="Price"
-                                android:textColor="#090A0A"
+                                android:textStyle="bold"
                                 android:textSize="18sp"
-                                android:textStyle="bold" />
+                                android:textColor="@color/colorPrimaryDark"/>
 
 
                         </LinearLayout>
 
                         <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
-                            android:id="@+id/number_button"
                             android:layout_width="120dp"
                             android:layout_height="40dp"
-                            android:layout_marginLeft="8dp"
+                            android:id="@+id/number_button"
                             android:layout_marginTop="8dp"
+                            android:layout_marginLeft="8dp"
                             android:layout_marginBottom="16dp"
-                            app:backGroundColor="#009688"
-                            app:finalNumber="20"
+                            app:textSize="8sp"
+                            app:backGroundColor="#1A6858"
                             app:initialNumber="1"
-                            app:textSize="8sp" />
+                            app:finalNumber="20"/>
 
                     </LinearLayout>
 
@@ -230,16 +229,17 @@
 
                 <Button
                     android:id="@+id/buttonShowComment"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_margin="8dp"
+                    android:background="@drawable/btn_dangki"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
-                    android:background="@drawable/btn_dangki"
-                    android:shadowColor="#050505"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="Show comment"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:layout_margin="8dp"
+                    android:shadowColor="@android:color/black"
+                    />
 
             </LinearLayout>
 

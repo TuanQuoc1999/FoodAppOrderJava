@@ -10,30 +10,30 @@
     tools:context=".Cart">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:background="?attr/colorPrimary"
         android:layout_weight="1"
-        android:background="#FFC107"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
 
         <ImageButton
             android:id="@+id/btnBack"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center_vertical"
             android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical"
             android:background="@null"
-            android:src="@drawable/ic_arrow_left_black_48dp" />
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:layout_marginLeft="32dp"
-            android:text="Cart"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_gravity="center_vertical"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
@@ -70,11 +70,11 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
                 android:text="Total: "
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                android:textSize="20sp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <TextView
                 android:id="@+id/total"
@@ -87,13 +87,14 @@
 
         <Button
             android:id="@+id/btnPlaceOrder"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:background="@drawable/btn_dangnhap"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:background="@drawable/btn_dangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Order"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+            android:textColor="@android:color/white"
+            />
 
     </LinearLayout>
 

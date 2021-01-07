@@ -33,7 +33,7 @@ public class DangKi extends AppCompatActivity {
     Button btnDangKi;
     TextView txtSignIn, txtSlogan;
 
-    String urlSignup = "https://orderadmin.000webhostapp.com/androidAPI/signup.php";
+    String urlSignup = "http://10.0.196.85:8080/androidAPI/signup.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -38,7 +38,7 @@ public class HistoryDetail extends AppCompatActivity {
     ProgressDialog dialog;
     ImageButton btnBack;
     String id,status,address,time,total;
-    String urlGetCartDetail = "https://orderadmin.000webhostapp.com/androidAPI/getcartdetail.php";
+    String urlGetCartDetail = "http://10.0.196.85:8080/androidAPI/getcartdetail.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

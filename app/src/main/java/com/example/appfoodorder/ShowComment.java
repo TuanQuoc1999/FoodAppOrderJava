@@ -32,12 +32,12 @@ import java.util.List;
 public class ShowComment extends AppCompatActivity {
     List<Rating> ratingList = new ArrayList<>();
     RecyclerView recyclerView;
-    ShowCommentAdapter adapter = new ShowCommentAdapter(ratingList, ShowComment.this);
+    ShowCommentAdapter adapter = new ShowCommentAdapter(ratingList,ShowComment.this);
     RecyclerView.LayoutManager layoutManager;
     String foodId;
     AlertDialog dialog;
     ImageButton btnBack;
-    String urlGetRating = "https://orderadmin.000webhostapp.com/androidAPI/getrating.php";
+    String urlGetRating = "http://10.0.196.85:8080/androidAPI/getrating.php";
 
 
     @Override

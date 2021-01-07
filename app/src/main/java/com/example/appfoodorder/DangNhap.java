@@ -42,8 +42,8 @@ public class DangNhap extends AppCompatActivity {
     CheckBox checkBox;
     TextView txtSignUp, txtSlogan ,txtForgotPassword;
 
-    String urlLogin = "https://orderadmin.000webhostapp.com/androidAPI/login.php";
-    String urlForgotPassword = "https://orderadmin.000webhostapp.com/androidAPI/forgotpassword.php";
+    String urlLogin = "http://10.0.196.85:8080/androidAPI/login.php";
+    String urlForgotPassword = "http://10.0.196.85:8080/androidAPI/forgotpassword.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

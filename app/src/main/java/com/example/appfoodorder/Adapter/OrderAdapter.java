@@ -40,7 +40,7 @@ import java.util.Map;
 public class OrderAdapter extends RecyclerView.Adapter<OrderViewHolder> {
     private List<History> list;
     private OrderHistory context;
-    protected String urlCancelOrder = "https://orderadmin.000webhostapp.com/androidAPI/cancelorder.php";
+    protected String urlCancelOrder = "http://10.0.196.85:8080/androidAPI/cancelorder.php";
 
     public OrderAdapter(List<History> list, OrderHistory context) {
         this.list = list;

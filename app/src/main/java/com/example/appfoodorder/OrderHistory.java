@@ -35,7 +35,7 @@ public class OrderHistory extends AppCompatActivity {
     OrderAdapter adapter = new OrderAdapter(listHistory,this);
     ProgressDialog dialog;
     ImageButton btnBack;
-    String urlGetCart = "https://orderadmin.000webhostapp.com/androidAPI/getcart.php";
+    String urlGetCart = "http://10.0.196.85:8080/androidAPI/getcart.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

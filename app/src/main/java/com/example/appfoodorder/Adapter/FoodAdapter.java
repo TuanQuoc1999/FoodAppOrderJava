@@ -43,7 +43,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodViewHolder> {
         Locale locale = new Locale("vi","VN");
         NumberFormat fmt = NumberFormat.getCurrencyInstance(locale);
         holder.txtFoodPrice.setText(fmt.format(foodList.get(position).getPrice()));
-        Picasso.get().load(foodList.get(position).getImage()).into(holder.imgFood);
+        Picasso.get().load("http://10.0.196.85:8080/androidAPI/img/"+foodList.get(position).getImage()).into(holder.imgFood);
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onClick(View view, int position, boolean isLongClick) {

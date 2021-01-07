@@ -33,6 +33,17 @@
             android:src="@drawable/ad3"
             android:scaleType="fitXY"/>
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ad4"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ad5"
+            android:scaleType="fitXY"/>
+
     </ViewFlipper>
 
     <androidx.recyclerview.widget.RecyclerView

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/mbackground">
+    android:background="@drawable/bg01">
 
     <TextView
         android:id="@+id/textViewSlogan"
@@ -14,14 +14,15 @@
         android:layout_centerInParent="true"
         android:gravity="center"
         android:text="@string/slogan"
-        android:textColor="@color/colorText"
+        android:textColor="@android:color/white"
         android:textSize="40sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="82dp"
+        android:orientation="horizontal"
         android:weightSum="2">
 
         <Button
@@ -33,7 +34,7 @@
             android:background="@drawable/btn_dangki"
             android:shadowColor="@android:color/black"
             android:text="sign up"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/buttonDangNhap"
@@ -44,7 +45,7 @@
             android:background="@drawable/btn_dangnhap"
             android:shadowColor="@android:color/black"
             android:text="sign in"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 

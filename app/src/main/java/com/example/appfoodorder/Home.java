@@ -55,7 +55,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     DrawerLayout drawer;
     NavigationView navigationView;
     ViewFlipper viewFlipper;
-    String urlGetCategory = "https://orderadmin.000webhostapp.com/androidAPI/getcategory.php";
+    String urlGetCategory = "http://10.0.196.85:8080/androidAPI/getcategory.php";
 
 
     @Override

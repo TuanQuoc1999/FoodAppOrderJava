@@ -1,7 +1,7 @@
 <resources>
     <drawable name="pass_icon">@drawable/ic_arrow_back_white_24dp</drawable>
     <string name="app_name">Just Eat It</string>
-    <string name="slogan">Just Eat It</string>
+    <string name="slogan">Just Drink It</string>
     <string name="slogan2">No matter where you are, whether you are at home, or in the office, or on the beach - we will find you and bring you delicious food</string>
     <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
